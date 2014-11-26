@@ -13,19 +13,18 @@
 body{
     margin: 0;
     padding: 0;
-    min-width: 800px;
+    min-width: 900px;
     font-family: tahoma;
     background-color: #ebeff2;
-    border: 1px solid blue;
+    
 }
 /*defines the top header that is shown all over the aplication*/
 .cabecalho-principal{
-    height: 60px;
     padding: 5px;
-    border: 1px solid red;
     background-color: #2a3342;
     #titulo-sistema{
         font-size: 30px;
+        text-align: center;
         color: white;
     }
     #opcoes-adm{
@@ -33,7 +32,7 @@ body{
         .opc{
             float: right;
             margin: 5px;
-            padding: 3px;
+            padding: 3px 8px;
             border-radius: 3px;
             background-color: #11191c;
             a{text-decoration: none;color: white;}
@@ -45,15 +44,16 @@ body{
 #botao-menu-principal{
         display: none;
         position: absolute;
-        top:38px;
+        top:45px;
         z-index: 999;
         width: 190px;
         height: 20px;
         border: 1px solid #ddd;
         background-color: rgba(230,230,230,.8);
         cursor: pointer;
+        text-align: center;
     }
-@media screen and (max-width: 799px){
+@media screen and (max-width: 899px){
     #botao-menu-principal{
         display:inline;
     }
@@ -63,7 +63,7 @@ body{
         float:left;
         width: 190px;
         background-color: #2a3342;
-        border: 1px solid lightgreen;
+        
         nav{
             ul{
                 padding: 0px;
@@ -91,7 +91,7 @@ body{
         }
     }
 }
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     #botao-menu-principal{
         visibility: hidden;
     }
@@ -132,27 +132,123 @@ body{
 }
 
 /*Defines the main content where the pages will be loaded*/
-
-
-
-    main{
-        /*min-width: 400px*/
-        border: 2px solid lightseagreen;
-        /*margin-left: 190px;*/
-        #titulo-pagina{
-            padding: 5px;
-            color: gray;
-            font-size: 22px;
-            background-color: white;
-        }
-        #conteudo-pagina{
+main{
+    /*min-width: 400px*/
+    /*border: 2px solid lightseagreen;*/
+    /*margin-left: 190px;*/
+    #titulo-pagina{
+        padding: 5px;
+        color: gray;
+        font-size: 22px;
+        background-color: white;
+    }
+    #conteudo-pagina{
+        max-width: 898px;
+        min-height: 500px;
+        padding-top: 10px;
+        border: 1px solid lightskyblue;
+        @media screen and (max-width: 899px){
             margin: 0 auto;
-            max-width: 800px;
-            min-height: 500px;
-            padding: 10px;
-            border: 1px solid red;
+        }
+        @media screen and (min-width: 900px){
+            margin-left: 250px;
+        }
+        #container{
+            width: 480px;
+            border: 1px solid pink;
+            @media screen and (max-width: 1199px){
+                float: none;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1200px){
+                float: left;
+            }
+            
+            #boxes-opcoes{
+                .box{
+                    margin: 5px;
+                    padding-top: 5px;
+                    float: left;
+                    width: 150px;
+                    height: 70px;
+                    border-radius: 3px;
+                    text-align: center;
+                    color: whitesmoke;
+                    background-color: #8ca3b5;
+                    span{
+                        margin-left: 5px;
+                        padding: 5px;
+                        float: left;
+                        border-radius: 3px;
+                        font-size: 9px;
+                        background-color: #2a3342;
+                    }
+                }
+            } 
+            #quadro-aviso{
+                margin: 5px;
+                float: left;
+                width: 470px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                #titulo{
+                    padding: 5px;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                    color: whitesmoke;
+                    background-color: #6f89a2;
+                }
+                .aviso{
+                    padding: 5px;
+                    height: 50px;
+                    color: gray;
+                    border-bottom: 2px solid whitesmoke;
+                    background-color: white;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    #titulo-aviso{
+                        float: left;
+                        width: 410px;
+                    }
+                    #resumo-aviso{
+                        float: left;
+                        width: 410px;
+                        font-size: 12px;
+                        /*border: 1px solid red;*/
+                    }
+                    #data-aviso{
+                        float: right;
+                        width: 30px;
+                        height: 50px;
+                        text-align: center;
+                        /*border: 1px solid blue;*/
+                    }
+                    #dia{
+                        font-size: 27px;
+                    }
+                    #mes{
+                        position: relative;
+                        top: -9px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        #calendario{
+            width: 400px;
+            height: 380px;
+            border: 1px solid green;
+            margin: 0 auto;
+            @media screen and (max-width: 1199px){
+                float: none;
+            }
+            @media screen and (min-width: 1200px){
+                float: left;
+            }
         }
     }
+}
 
 
 .clear{

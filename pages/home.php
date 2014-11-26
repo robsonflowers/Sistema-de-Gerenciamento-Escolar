@@ -1,4 +1,4 @@
-<div class="centralizar">
+
     <div id="container">
         <section id="boxes-opcoes">
             <div class="box"><span>28</span>Alunos</div>
@@ -39,6 +39,7 @@
                 <div id="resumo-aviso">Festa de final de ano com troca de lembranças</div>
             </article>
         </section>
+        <div class="clear"></div>
     </div>
     <section id="calendario">
         <?php include_once 'calendario.php'?>;
@@ -46,5 +47,5 @@
 
 
     <div class="clear"></div>
-</div>
+
             
