@@ -1,0 +1,86 @@
+.tabela{
+background:#fff;
+width:200px;
+padding:0px;
+border:1px solid #f0f0f0;
+float:left;
+margin-right:20px;
+}
+.td{
+background:#f8f8f8;
+width:20px;
+height:20px;
+text-align:center;
+}
+.hj{
+background: #FFFFCC;
+width:20px;
+height:20px;
+text-align:center;
+}
+.dom{
+background: #FFCC99;
+width:20px;
+height:20px;
+text-align:center;
+}
+.evt{
+background: #CCFF99;
+width:20px;
+height:20px;
+text-align:center;
+}
+.mes{
+background:#fff;
+width:auto;
+height:20px;
+text-align:center;
+}
+.show{
+background:#202020;
+width:300px;
+height:30px;
+text-align:left;
+font-size:12px;
+font-weight:bold;
+color:#CCFF00;
+padding-left:5px;
+}
+.linha{
+background:#404040;
+width:300px;
+height:20px;
+text-align:left;
+font-size:11px;
+color:#f0f0f0;
+padding:1px 1px 1px 10px;
+}
+.sem{
+background: #ECE6D9;
+width:auto;
+height:20px;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+font-family:Verdana;
+}
+body,td,th {
+font-family: Verdana;
+font-size: 11px;
+color: #000000;
+}
+a:link {
+color: #000000;
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+color: #000000;
+}
+a:hover {
+text-decoration: underline;
+color: #FF9900;
+}
+a:active {
+text-decoration: none;
+}

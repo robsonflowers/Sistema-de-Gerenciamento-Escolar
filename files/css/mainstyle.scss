@@ -30,10 +30,10 @@ body{
     #opcoes-adm{
         color: gainsboro;
         .opc{
+            top:61px;
             float: right;
-            margin: 5px;
+            margin: 0 5px;
             padding: 3px 8px;
-            border-radius: 3px;
             background-color: #11191c;
             a{text-decoration: none;color: white;}
         }
@@ -42,28 +42,24 @@ body{
 
 /*defines the main menu in the left*/
 #botao-menu-principal{
-        display: none;
         position: absolute;
         top:45px;
         z-index: 999;
         width: 190px;
         height: 20px;
-        border: 1px solid #ddd;
-        background-color: rgba(230,230,230,.8);
+        background-color: #11191c;
         cursor: pointer;
         text-align: center;
+        color: white;
     }
 @media screen and (max-width: 899px){
-    #botao-menu-principal{
-        display:inline;
-    }
+    
     #menu-principal{
-        visibility: hidden;
         position: absolute;
         float:left;
         width: 190px;
         background-color: #2a3342;
-        
+        -webkit-box-shadow: 3px 1px 3px lightslategrey;
         nav{
             ul{
                 padding: 0px;
@@ -92,16 +88,13 @@ body{
     }
 }
 @media screen and (min-width: 900px){
-    #botao-menu-principal{
-        visibility: hidden;
-    }
+    
     #menu-principal{
         position: absolute;
         left:0;
         width: 190px;
         height: 100%;
         background-color: #2a3342;
-        border: 1px solid lightskyblue;
         nav{
             ul{
                 min-width: 190px;
@@ -133,14 +126,19 @@ body{
 
 /*Defines the main content where the pages will be loaded*/
 main{
-    /*min-width: 400px*/
-    /*border: 2px solid lightseagreen;*/
-    /*margin-left: 190px;*/
     #titulo-pagina{
         padding: 5px;
         color: gray;
         font-size: 22px;
         background-color: white;
+        span{
+            @media screen and (max-width: 899px){
+                margin: 0;
+            }
+            @media screen and (min-width: 900px){
+                margin-left: 250px;
+            }
+        }
     }
     #conteudo-pagina{
         max-width: 898px;

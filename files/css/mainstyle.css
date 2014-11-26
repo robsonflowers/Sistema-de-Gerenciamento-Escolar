@@ -1,0 +1,200 @@
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+  font-family: tahoma;
+  background-color: #ebeff2; }
+
+/*defines the top header that is shown all over the aplication*/
+.cabecalho-principal {
+  padding: 5px;
+  background-color: #2a3342; }
+  .cabecalho-principal #titulo-sistema {
+    font-size: 30px;
+    text-align: center;
+    color: white; }
+  .cabecalho-principal #opcoes-adm {
+    color: gainsboro; }
+    .cabecalho-principal #opcoes-adm .opc {
+      top: 61px;
+      float: right;
+      margin: 0 5px;
+      padding: 3px 8px;
+      background-color: #11191c; }
+      .cabecalho-principal #opcoes-adm .opc a {
+        text-decoration: none;
+        color: white; }
+
+/*defines the main menu in the left*/
+#botao-menu-principal {
+  position: absolute;
+  top: 45px;
+  z-index: 999;
+  width: 190px;
+  height: 20px;
+  background-color: #11191c;
+  cursor: pointer;
+  text-align: center;
+  color: white; }
+
+@media screen and (max-width: 899px) {
+  #menu-principal {
+    position: absolute;
+    float: left;
+    width: 190px;
+    background-color: #2a3342;
+    -webkit-box-shadow: 3px 1px 3px lightslategrey; }
+    #menu-principal nav ul {
+      padding: 0px;
+      list-style-type: none; }
+      #menu-principal nav ul li:hover {
+        background-color: #323b4a;
+        border-left: 4px solid lightsteelblue; }
+      #menu-principal nav ul li a {
+        padding: 4px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+        color: white; }
+        #menu-principal nav ul li a span {
+          padding-left: 12px; } }
+@media screen and (min-width: 900px) {
+  #menu-principal {
+    position: absolute;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    background-color: #2a3342; }
+    #menu-principal nav ul {
+      min-width: 190px;
+      padding: 0px;
+      list-style-type: none;
+      float: left; }
+      #menu-principal nav ul li:hover {
+        background-color: #323b4a;
+        border-left: 4px solid lightsteelblue; }
+      #menu-principal nav ul li a {
+        padding: 4px;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+        color: white; }
+        #menu-principal nav ul li a span {
+          padding-left: 12px; } }
+/*Defines the main content where the pages will be loaded*/
+main #titulo-pagina {
+  padding: 5px;
+  color: gray;
+  font-size: 22px;
+  background-color: white; }
+  @media screen and (max-width: 899px) {
+    main #titulo-pagina span {
+      margin: 0; } }
+  @media screen and (min-width: 900px) {
+    main #titulo-pagina span {
+      margin-left: 250px; } }
+main #conteudo-pagina {
+  max-width: 898px;
+  min-height: 500px;
+  padding-top: 10px;
+  border: 1px solid lightskyblue; }
+  @media screen and (max-width: 899px) {
+    main #conteudo-pagina {
+      margin: 0 auto; } }
+  @media screen and (min-width: 900px) {
+    main #conteudo-pagina {
+      margin-left: 250px; } }
+  main #conteudo-pagina #container {
+    width: 480px;
+    border: 1px solid pink; }
+    @media screen and (max-width: 1199px) {
+      main #conteudo-pagina #container {
+        float: none;
+        margin: 0 auto; } }
+    @media screen and (min-width: 1200px) {
+      main #conteudo-pagina #container {
+        float: left; } }
+    main #conteudo-pagina #container #boxes-opcoes .box {
+      margin: 5px;
+      padding-top: 5px;
+      float: left;
+      width: 150px;
+      height: 70px;
+      border-radius: 3px;
+      text-align: center;
+      color: whitesmoke;
+      background-color: #8ca3b5; }
+      main #conteudo-pagina #container #boxes-opcoes .box span {
+        margin-left: 5px;
+        padding: 5px;
+        float: left;
+        border-radius: 3px;
+        font-size: 9px;
+        background-color: #2a3342; }
+    main #conteudo-pagina #container #quadro-aviso {
+      margin: 5px;
+      float: left;
+      width: 470px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      main #conteudo-pagina #container #quadro-aviso #titulo {
+        padding: 5px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: whitesmoke;
+        background-color: #6f89a2; }
+      main #conteudo-pagina #container #quadro-aviso .aviso {
+        padding: 5px;
+        height: 50px;
+        color: gray;
+        border-bottom: 2px solid whitesmoke;
+        background-color: white; }
+        main #conteudo-pagina #container #quadro-aviso .aviso:last-child {
+          border-bottom: none; }
+        main #conteudo-pagina #container #quadro-aviso .aviso #titulo-aviso {
+          float: left;
+          width: 410px; }
+        main #conteudo-pagina #container #quadro-aviso .aviso #resumo-aviso {
+          float: left;
+          width: 410px;
+          font-size: 12px;
+          /*border: 1px solid red;*/ }
+        main #conteudo-pagina #container #quadro-aviso .aviso #data-aviso {
+          float: right;
+          width: 30px;
+          height: 50px;
+          text-align: center;
+          /*border: 1px solid blue;*/ }
+        main #conteudo-pagina #container #quadro-aviso .aviso #dia {
+          font-size: 27px; }
+        main #conteudo-pagina #container #quadro-aviso .aviso #mes {
+          position: relative;
+          top: -9px;
+          font-size: 11px; }
+  main #conteudo-pagina #calendario {
+    width: 400px;
+    height: 380px;
+    border: 1px solid green;
+    margin: 0 auto; }
+    @media screen and (max-width: 1199px) {
+      main #conteudo-pagina #calendario {
+        float: none; } }
+    @media screen and (min-width: 1200px) {
+      main #conteudo-pagina #calendario {
+        float: left; } }
+
+.clear {
+  clear: both; }

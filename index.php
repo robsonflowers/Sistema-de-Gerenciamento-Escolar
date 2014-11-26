@@ -63,7 +63,7 @@ include_once('app/default.php');
                 include_once(BASE_PATH . 'app/components/nav.php'); 
                 echo 
                 '<main>
-                    <div id="titulo-pagina">'.$title.'</div>
+                    <div id="titulo-pagina"><span>'.$title.'</span></div>
                     <div id="conteudo-pagina">';
                     include_once(BASE_PATH . 'pages/' . $page . '.php');
                 echo

@@ -1,0 +1,13 @@
+$blue: #ddd;
+.container{
+    background-color: $blue;
+    p{
+        font-size: 10px
+    }
+    a{
+        text-decoration: none;
+    }
+    #clear{
+        clear:both;
+    }
+}

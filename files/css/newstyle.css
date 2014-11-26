@@ -1,0 +1,8 @@
+.container {
+  background-color: #dddddd; }
+  .container p {
+    font-size: 10px; }
+  .container a {
+    text-decoration: none; }
+  .container #clear {
+    clear: both; }

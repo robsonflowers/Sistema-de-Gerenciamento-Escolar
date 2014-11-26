@@ -1,0 +1,39 @@
+#abas {
+  border-radius: 5px;
+  background-color: white; }
+  #abas #lista #secao-superior {
+    height: 70px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; }
+    #abas #lista #secao-superior select {
+      float: left;
+      height: 30px;
+      padding: 4px;
+      font-size: 17px; }
+  #abas #lista #secao-inferior #total-turmas, #abas #lista #secao-inferior #total-alunos {
+    padding-top: 5px;
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #8ca3b5; }
+  #abas #lista #secao-inferior table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse; }
+    #abas #lista #secao-inferior table thead tr {
+      background-color: whitesmoke; }
+      #abas #lista #secao-inferior table thead tr td {
+        border-bottom: 1px solid #ddd;
+        text-align: center; }
+    #abas #lista #secao-inferior table tbody tr:nth-child(odd) {
+      background-color: #ebebeb; }
+    #abas #lista #secao-inferior table tbody tr td:last-child {
+      text-align: center; }
+    #abas #lista #secao-inferior table td {
+      padding: 5px;
+      border-right: 1px solid #ddd; }
+      #abas #lista #secao-inferior table td:last-child {
+        border-right: none; }

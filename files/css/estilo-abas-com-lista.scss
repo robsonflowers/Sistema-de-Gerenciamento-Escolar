@@ -1,0 +1,70 @@
+#abas{
+    border-radius: 5px;
+    background-color: white;
+    #aba1{}
+    #aba2{}
+    #lista{
+        #secao-superior{
+            height: 70px;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            select{
+                float: left;
+                height: 30px;
+                padding: 4px;
+                font-size: 17px;
+                option{}
+            }
+            total-turmas{}
+        }
+        #secao-inferior{
+            select{
+                option{}
+            }
+            #total-turmas,#total-alunos{
+                padding-top: 5px;
+                float: left;
+                width: 150px;
+                height: 40px;
+                border-radius: 3px;
+                text-align: center;
+                color: whitesmoke;
+                background-color: #8ca3b5;
+            }
+            table{
+                width: 100%;
+                border: none;
+                border-collapse: collapse;
+                thead{
+                    tr{
+                        background-color: whitesmoke;
+                        td{
+                            border-bottom: 1px solid #ddd;
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        &:nth-child(odd){
+                               background-color: #ebebeb;
+                        }
+                        td{
+                            &:last-child{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                td{
+                    padding: 5px;
+                    border-right: 1px solid #ddd;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+       

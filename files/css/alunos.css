@@ -1,0 +1,38 @@
+#lista #secao-superior #total-alunos{
+    padding-top: 5px;
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #8ca3b5;
+}
+#lista #secao-inferior table td:nth-child(2){
+    width: 70px;
+}
+#lista #secao-inferior table .foto{
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+#lista #secao-inferior table .botao-editar, .botao-excluir{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+#lista #secao-inferior table .botao-excluir{
+    background-color: lightcoral;
+}
+#lista #secao-inferior table .botao-editar{
+    background-color: lightseagreen; 
+}
+#adicionar-aluno{
+    visibility: hidden;
+}
