@@ -1,3 +1,4 @@
+@charset "CP850";
 ::-webkit-scrollbar {
   width: 12px; }
 
@@ -196,5 +197,6 @@ main #conteudo-pagina {
       main #conteudo-pagina #calendario {
         float: left; } }
 
+/* limpar formatação de float */
 .clear {
   clear: both; }
