@@ -40,12 +40,7 @@ body{
         }
     }
 }
-@media screen and (max-width: 799px){
-    
-}
-@media screen and (min-width: 800px){
-    
-}
+
 /*defines the main menu in the left*/
 #botao-menu-principal{
         display: none;
@@ -58,16 +53,14 @@ body{
         background-color: rgba(230,230,230,.8);
         cursor: pointer;
     }
-@media screen and (max-width: 710px){
+@media screen and (max-width: 799px){
     #botao-menu-principal{
         display:inline;
     }
     #menu-principal{
-/*        visibility: hidden;*/
-        /*display:inline;*/
+        visibility: hidden;
         position: absolute;
         float:left;
-        /*left:0;*/
         width: 190px;
         background-color: #2a3342;
         border: 1px solid lightgreen;
@@ -98,7 +91,7 @@ body{
         }
     }
 }
-@media screen and (min-width: 701px){
+@media screen and (min-width: 800px){
     #botao-menu-principal{
         visibility: hidden;
     }
@@ -108,7 +101,7 @@ body{
         width: 190px;
         height: 100%;
         background-color: #2a3342;
-        border: 1px solid lightgreen;
+        border: 1px solid lightskyblue;
         nav{
             ul{
                 min-width: 190px;
@@ -139,15 +132,13 @@ body{
 }
 
 /*Defines the main content where the pages will be loaded*/
-@media screen and (max-width: 700px){
+
+
+
     main{
-        margin-left: 0px;
-    }    
-}
-@media screen and (min-width: 701px){
-    main{
-        border: 1px solid purple;
-        margin-left: 190px;
+        /*min-width: 400px*/
+        border: 2px solid lightseagreen;
+        /*margin-left: 190px;*/
         #titulo-pagina{
             padding: 5px;
             color: gray;
@@ -155,12 +146,14 @@ body{
             background-color: white;
         }
         #conteudo-pagina{
-            height: 500px;
+            margin: 0 auto;
+            max-width: 800px;
+            min-height: 500px;
             padding: 10px;
             border: 1px solid red;
         }
     }
-}
+
 
 .clear{
     clear: both;
