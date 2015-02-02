@@ -47,9 +47,9 @@ catch(PDOException $e)
 }
 
 # Pages
-$page = isset($_GET['page']) && is_file(BASE_PATH . '/pages/' . mysql_real_escape_string($_GET['page']) . '.php') ? mysql_real_escape_string($_GET['page']) : "index";
+$page = isset($_GET['page']) && is_file(BASE_PATH . '/pages/' . mysqli_escape_string($pdo,$_GET['page']) . '.php') ? mysqli_escape_string($pdo,$_GET['page']) : "index";
 
-if(isset($_GET['page']) && !is_file(BASE_PATH . '/pages/' . mysql_real_escape_string($_GET['page']) . '.php')){
+if(isset($_GET['page']) && !is_file(BASE_PATH . '/pages/' . mysqli_escape_string($pdo,$_GET['page']) . '.php')){
     $page = 'pagina-nao-encontrada';
 }
 
