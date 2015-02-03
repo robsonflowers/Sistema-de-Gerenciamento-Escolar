@@ -35,21 +35,24 @@ else
 }
 
 # Definir o caminho base para a pasta root
-define('BASE_PATH', dirname(__FILE__) . '/../');
+define('BASE_PATH', dirname(__FILE__).'/../');
 
 try
 {
     $pdo = new PDO("mysql:host=$server;dbname=$bd", $user, $pass);
+    
 }
 catch(PDOException $e)
 {
-    echo '<pre>Falha na conexão com o banco de dados. <br/>Dados do erro: ' . $e->getMessage() . '</pre>';
+    echo '<pre>Falha na conexão com o banco de dados. <br/>Dados do erro: '.$e->getMessage().'</pre>';
 }
 
 # Pages
-$page = isset($_GET['page']) && is_file(BASE_PATH . '/pages/' . mysqli_escape_string($pdo,$_GET['page']) . '.php') ? mysqli_escape_string($pdo,$_GET['page']) : "index";
+$page = isset($_GET['page']) && is_file(BASE_PATH.'/pages/'.$_GET['page'].'.php') ? $_GET['page'] : "index";
 
-if(isset($_GET['page']) && !is_file(BASE_PATH . '/pages/' . mysqli_escape_string($pdo,$_GET['page']) . '.php')){
+echo BASE_PATH.'/pages/'.$_GET['page'].'.php';
+
+if(isset($_GET['page']) && !is_file(BASE_PATH.'/pages/'.$_GET['page'].'.php')){
     $page = 'pagina-nao-encontrada';
 }
 
