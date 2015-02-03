@@ -50,8 +50,6 @@ catch(PDOException $e)
 # Pages
 $page = isset($_GET['page']) && is_file(BASE_PATH.'/pages/'.$_GET['page'].'.php') ? $_GET['page'] : "index";
 
-echo BASE_PATH.'/pages/'.$_GET['page'].'.php';
-
 if(isset($_GET['page']) && !is_file(BASE_PATH.'/pages/'.$_GET['page'].'.php')){
     $page = 'pagina-nao-encontrada';
 }
