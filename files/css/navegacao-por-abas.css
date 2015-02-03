@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/02/2015, 10:56:06
+    Author     : robso_000
+*/
+
+.lista-abas, .lista-abas * {
+	margin:0;
+	padding:0;
+	outline:none;
+	border:0;
+	background:none
+}
+.lista-abas {
+	position:relative;
+	font-size:0;
+	text-align:left;
+	color:#666
+}
+.lista-abas > input {
+	position:absolute;
+	display:none
+}
+.lista-abas > label {
+	position:relative;
+	z-index:1;
+	display:inline-block;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:1px;
+	padding-top:0;
+	padding-left:0;
+	font-size:13px;
+	line-height:45px;
+	cursor:pointer
+}
+.lista-abas > label span {
+	display:block;
+	/*padding:5px;*/
+	background:rgba(255, 255, 255, .9)
+}
+.lista-abas > label span span {
+	padding:0 20px;
+	background:transparent;
+ transition:background .3s, color .4s;
+ -o-transition:background .3s, color .4s;
+ -ms-transition:background .3s, color .4s;
+ -moz-transition:background .3s, color .4s;
+ -webkit-transition:background .3s, color .4s
+}
+.lista-abas > label:hover span span {
+	background:#3498db;
+	color:#fff
+}
+.lista-abas > input:checked + label span span {
+	background:#3498db;
+	color:#fff
+}
+.lista-abas > ul {
+	list-style:none;
+	position:relative;
+	display:block;
+	font-size:13px
+}
+.lista-abas > ul > li {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	overflow:auto;
+	padding:20px 25px 25px;
+	background:rgba(255, 255, 255, .9);
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	opacity:0;
+	-o-transform-origin:0% 0%;
+	-ms-transform-origin:0% 0%;
+	-moz-transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+	-o-transition:opacity .8s, -o-transform .8s;
+	-ms-transition:opacity .8s, -ms-transform .8s;
+	-moz-transition:opacity .8s, -moz-transform .8s;
+	-webkit-transition:opacity .8s, -webkit-transform .8s
+}
+.lista-abas > .aba-1:checked ~ ul > .aba-1, 
+.lista-abas > .aba-2:checked ~ ul > .aba-2, 
+.lista-abas > .aba-3:checked ~ ul > .aba-3, 
+.lista-abas > .aba-4:checked ~ ul > .aba-4 {
+ position:relative;
+ z-index:1;
+ opacity:1
+}
+.conteudo {
+	/*width:600px;*/
+	position:relative;
+	/*line-height:20px*/
+}
+.pagina-url {
+	float:right;
+	margin-top:15px
+}
+.amimacao-flip > ul {
+	perspective:2000px;
+	-o-perspective:2000px;
+	-ms-perspective:2000px;
+	-moz-perspective:2000px;
+	-webkit-perspective:2000px;
+	perspective-origin:50% 50%;
+	-o-perspective-origin:50% 50%;
+	-ms-perspective-origin:50% 50%;
+	-moz-perspective-origin:50% 50%;
+	-webkit-perspective-origin:50% 50%
+}
+.amimacao-flip > ul > li {
+	-o-transform:rotateX(-90deg);
+	-ms-transform:rotateX(-90deg);
+	-moz-transform:rotateX(-90deg);
+	-webkit-transform:rotateX(-90deg)
+}
+.amimacao-flip > .aba-1:checked ~ ul > .aba-1, 
+.amimacao-flip > .aba-2:checked ~ ul > .aba-2, 
+.amimacao-flip > .aba-3:checked ~ ul > .aba-3, 
+.amimacao-flip > .aba-4:checked ~ ul > .aba-4 {
+ -o-transform:rotateX(0deg);
+ -ms-transform:rotateX(0deg);
+ -moz-transform:rotateX(0deg);
+ -webkit-transform:rotateX(0deg);
+ -o-transition-delay:0.2s;
+ -ms-transition-delay:0.2s;
+ -moz-transition-delay:0.2s;
+ -webkit-transition-delay:0.2s
+}
