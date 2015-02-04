@@ -90,36 +90,36 @@ and open the template in the editor.
 .lista-abas > .aba-2:checked ~ ul > .aba-2, 
 .lista-abas > .aba-3:checked ~ ul > .aba-3, 
 .lista-abas > .aba-4:checked ~ ul > .aba-4 {
- position:relative;
- z-index:1;
- opacity:1
+    position:relative;
+    z-index:1;
+    opacity:1
 }
 .conteudo {
-	/*width:600px;*/
-	position:relative;
-	/*line-height:20px*/
+    /*width:600px;*/
+    position:relative;
+    /*line-height:20px*/
 }
 .pagina-url {
-	float:right;
-	margin-top:15px
+    float:right;
+    margin-top:15px
 }
 .amimacao-flip > ul {
-	perspective:2000px;
-	-o-perspective:2000px;
-	-ms-perspective:2000px;
-	-moz-perspective:2000px;
-	-webkit-perspective:2000px;
-	perspective-origin:50% 50%;
-	-o-perspective-origin:50% 50%;
-	-ms-perspective-origin:50% 50%;
-	-moz-perspective-origin:50% 50%;
-	-webkit-perspective-origin:50% 50%
+    perspective:2000px;
+    -o-perspective:2000px;
+    -ms-perspective:2000px;
+    -moz-perspective:2000px;
+    -webkit-perspective:2000px;
+    perspective-origin:50% 50%;
+    -o-perspective-origin:50% 50%;
+    -ms-perspective-origin:50% 50%;
+    -moz-perspective-origin:50% 50%;
+    -webkit-perspective-origin:50% 50%
 }
 .amimacao-flip > ul > li {
-	-o-transform:rotateX(-90deg);
-	-ms-transform:rotateX(-90deg);
-	-moz-transform:rotateX(-90deg);
-	-webkit-transform:rotateX(-90deg)
+    -o-transform:rotateX(-90deg);
+    -ms-transform:rotateX(-90deg);
+    -moz-transform:rotateX(-90deg);
+    -webkit-transform:rotateX(-90deg)
 }
 .amimacao-flip > .aba-1:checked ~ ul > .aba-1, 
 .amimacao-flip > .aba-2:checked ~ ul > .aba-2, 

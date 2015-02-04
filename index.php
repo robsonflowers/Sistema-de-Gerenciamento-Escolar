@@ -41,6 +41,7 @@ include_once('app/default.php');
   
   <link href="<?php echo BASE_URL; ?>files/css/navegacao-por-abas.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo BASE_URL; ?>files/css/estilo-listas.css" rel="stylesheet" type="text/css"/>
+  <link href="<?php echo BASE_URL; ?>files/css/janela-modal.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo BASE_URL; ?>files/css/alunos.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo BASE_URL; ?>files/css/turmas.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo BASE_URL; ?>files/css/perfil-aluno.css" rel="stylesheet" type="text/css"/>
