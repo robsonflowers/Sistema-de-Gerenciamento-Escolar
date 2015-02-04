@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 ::-webkit-scrollbar {
   width: 12px; }
 
@@ -197,6 +197,8 @@ main #conteudo-pagina {
       main #conteudo-pagina #calendario {
         float: left; } }
 
-/* limpar formatação de float */
+/* limpar formata├º├úo de float */
 .clear {
   clear: both; }
+
+/*# sourceMappingURL=mainstyle.css.map */

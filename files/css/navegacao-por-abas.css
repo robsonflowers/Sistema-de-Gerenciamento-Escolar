@@ -46,11 +46,11 @@ and open the template in the editor.
 .lista-abas > label span span {
 	padding:0 20px;
 	background:transparent;
- transition:background .3s, color .4s;
- -o-transition:background .3s, color .4s;
- -ms-transition:background .3s, color .4s;
- -moz-transition:background .3s, color .4s;
- -webkit-transition:background .3s, color .4s
+        transition:background .3s, color .4s;
+        -o-transition:background .3s, color .4s;
+        -ms-transition:background .3s, color .4s;
+        -moz-transition:background .3s, color .4s;
+        -webkit-transition:background .3s, color .4s
 }
 .lista-abas > label:hover span span {
 	background:#3498db;
@@ -125,12 +125,12 @@ and open the template in the editor.
 .amimacao-flip > .aba-2:checked ~ ul > .aba-2, 
 .amimacao-flip > .aba-3:checked ~ ul > .aba-3, 
 .amimacao-flip > .aba-4:checked ~ ul > .aba-4 {
- -o-transform:rotateX(0deg);
- -ms-transform:rotateX(0deg);
- -moz-transform:rotateX(0deg);
- -webkit-transform:rotateX(0deg);
- -o-transition-delay:0.2s;
- -ms-transition-delay:0.2s;
- -moz-transition-delay:0.2s;
- -webkit-transition-delay:0.2s
+    -o-transform:rotateX(0deg);
+    -ms-transform:rotateX(0deg);
+    -moz-transform:rotateX(0deg);
+    -webkit-transform:rotateX(0deg);
+    -o-transition-delay:0.2s;
+    -ms-transition-delay:0.2s;
+    -moz-transition-delay:0.2s;
+    -webkit-transition-delay:0.2s
 }

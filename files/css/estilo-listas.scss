@@ -1,9 +1,5 @@
-#abas{
-    border-radius: 5px;
-    background-color: white;
-    #aba1{}
-    #aba2{}
-    #lista{
+
+    .lista{
         #secao-superior{
             height: 70px;
             padding: 8px;
@@ -14,6 +10,16 @@
                 padding: 4px;
                 font-size: 17px;
                 option{}
+            }
+            #total-alunos{
+                padding-top: 5px;
+                float: left;
+                width: 150px;
+                height: 40px;
+                border-radius: 3px;
+                text-align: center;
+                color: whitesmoke;
+                background-color: #8ca3b5;
             }
             total-turmas{}
         }
@@ -31,9 +37,9 @@
                 color: whitesmoke;
                 background-color: #8ca3b5;
             }
-            table{
+            #tabela-alunos{
                 width: 100%;
-                border: none;
+                /*border: none;*/
                 border-collapse: collapse;
                 thead{
                     tr{
@@ -53,6 +59,28 @@
                             &:last-child{
                                 text-align: center;
                             }
+                            .foto{
+                                margin: 0;
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 70px;
+                                border: 1px solid #ddd;
+                                background-color: white;
+                            }
+                            .botao-editar, .botao-excluir{
+                                padding: 5px;
+                                border-radius: 5px;
+                                border: 1px solid #ddd;
+                                color: white;
+                                cursor: pointer;
+                                outline: none;
+                            }
+                            .botao-editar{
+                                background-color: lightseagreen; 
+                            }
+                            .botao-excluir{
+                                background-color: lightcoral;
+                            }
                         }
                     }
                 }
@@ -66,5 +94,5 @@
             }
         }
     }
-}
+
        

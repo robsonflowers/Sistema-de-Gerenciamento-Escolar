@@ -42,7 +42,7 @@
         <div class="clear"></div>
     </div>
     <section id="calendario">
-        <?php include_once 'calendario.php'?>;
+        <?php // include_once 'calendario.php'?>;
     </section>
 
 

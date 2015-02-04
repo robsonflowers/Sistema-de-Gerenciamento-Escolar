@@ -1,8 +1,10 @@
 .container {
-  background-color: #dddddd; }
+  background-color: #ddd; }
   .container p {
     font-size: 10px; }
   .container a {
     text-decoration: none; }
   .container #clear {
     clear: both; }
+
+/*# sourceMappingURL=newstyle.css.map */

@@ -19,68 +19,111 @@
         
 });
 </script>
-<div id="abas">
-    <div id="aba1">Lista de alunos</div>
-    <div id="aba2">Adicionar aluno</div>
 
-    <div id="lista">
-        <section id="secao-superior">
-            <select>
-                <option>Todos</option>
-                <option>Turma I</option>
-                <option>Turma II</option>
-                <option>Turma III</option>
-            </select>
+<div class="area-total-abas">
+    <div class="lista-abas amimacao-flip">
+        <input type="radio" name="lista-abas" checked id="aba-1" class="aba-1">
+        <label for="aba-1"><span><span>Lista de alunos</span></span></label>
+        <input type="radio" name="lista-abas" id="aba-2" class="aba-2">
+        <label for="aba-2"><span><span>Adicionar aluno</span></span></label>
 
-            <div id="total-alunos">
-                Total de 12 alunos
-            </div>
-            <div class="clear"></div>
-        </section>
-        <section id="secao-inferior">
-            <table>
-                <thead>
-                    <tr>
-                        <td>Id</td>
-                        <td>Foto</td>
-                        <td>Nome do aluno</td>
-                        <td>Endereço</td>
-                        <td>Nome do responsável</td>
-                        <td>Perfil</td>
-                        <td>Opções</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><img class="foto" src="temp/users/alunos/aluno-1.PNG" alt=""/></td>
-                        <td>Robson Flores</td>
-                        <td>Av Bento Gonçalves, 1380</td>
-                        <td>Robson Flores</td>
-                        <td><button id="botao-perfil">Visualizar</button></td>
-                        <td>
-                            <button class="botao-editar">Editar</button>
-                            <button class="botao-excluir">Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img class="foto" src="temp/users/alunos/aluno-2.PNG" alt=""/></td>
-                        <td>Robson Flores</td>
-                        <td>Av Bento Gonçalves, 1380</td>
-                        <td>Robson Flores</td>
-                        <td>visualizar</td>
-                        <td>
-                            <button class="botao-editar">Editar</button>
-                            <button class="botao-excluir">Excluir</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
-    <div id="adicionar-aluno">
-        teste
+        <ul>
+            <li class="aba-1">
+                    <div class="conteudo">
+                        <div class="lista">
+                            <section id="secao-superior">
+                                <select>
+                                    <option>Todos</option>
+                                    <option>Turma I</option>
+                                    <option>Turma II</option>
+                                    <option>Turma III</option>
+                                </select>
+
+                                <div id="total-alunos">
+                                    Total de 12 alunos
+                                </div>
+                                <div class="clear"></div>
+                            </section>
+                            <section id="secao-inferior">
+                                <table id="tabela-alunos">
+                                    <thead>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Foto</td>
+                                            <td>Nome do aluno</td>
+                                            <td>Endereço</td>
+                                            <td>Nome do responsável</td>
+                                            <td>Perfil</td>
+                                            <td>Opções</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img class="foto" src="temp/users/alunos/aluno-1.PNG" alt=""/></td>
+                                            <td>Robson Flores</td>
+                                            <td>Av Bento Gonçalves, 1380</td>
+                                            <td>Robson Flores</td>
+                                            <td><button id="botao-perfil">Visualizar</button></td>
+                                            <td>
+                                                <button class="botao-editar">Editar</button>
+                                                <button class="botao-excluir">Excluir</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><img class="foto" src="temp/users/alunos/aluno-2.PNG" alt=""/></td>
+                                            <td>Robson Flores</td>
+                                            <td>Av Bento Gonçalves, 1380</td>
+                                            <td>Robson Flores</td>
+                                            <td>visualizar</td>
+                                            <td>
+                                                <button class="botao-editar">Editar</button>
+                                                <button class="botao-excluir">Excluir</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>    
+                    </div>
+            </li>
+            <li class="aba-2">
+                    <div class="conteudo">
+                            <h1>Adicionar novo aluno</h1>
+                            
+                            <form>
+                                <label>Nome</label>
+                                <input type="text">
+                                <label>Sobrenome</label>
+                                <input type="text">
+                                <br/>
+                                <label>Sexo</label>
+                                <input type="text">
+                                <input type="radio" name="sexo" id="sexo">
+                                <label for="sexo"><span>Masculino</span></label>
+                                <input type="radio" name="sexo" id="sexo">
+                                <label for="sexo"><span>Feminino</span></label>
+                                
+                                <label>Data de nascimento</label>
+                                <input type="date">
+                                <br/>
+                                <label>Rua</label>
+                                <input type="text">
+                                
+                                <label>Número</label>
+                                <input type="text">
+                                <br/>
+                                <label>Bairro</label>
+                                <input type="text">
+                                <br/>
+                                <label>Cidade</label>
+                                <input type="text">
+                                
+                            </form>
+                    </div>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="clear"></div>
