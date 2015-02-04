@@ -13,10 +13,10 @@ date_default_timezone_set(DEFAULT_TIMEZONE);
 if(ONLINE)
 {
     # Dados para conexão online
-    $server = "";
-    $user = "";
-    $pass = "";
-    $bd = "";
+    $server = "mysql.hostinger.com.br";
+    $user = "u462788887_admin";
+    $pass = "ma4rxo";
+    $bd = "u462788887_sist";
 
     # Base URL
     define('BASE_URL', '');
